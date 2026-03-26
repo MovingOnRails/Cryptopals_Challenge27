@@ -28,5 +28,9 @@ int main(){
     memcpy(P_3,deciphered+32,16);
     unsigned char* result = xorRawStrings(P_1, P_3, 16);
 
+    for(int i=0;i<16;i++){
+        printf("%c",result[i]);
+    }
+    printf("\n");
     return 0;
 }
